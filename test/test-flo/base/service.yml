@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: 
+  labels:
+    app: 
+    team: 
+    tier: 
+spec:
+  ports:
+    - port: 80
+      targetPort: 8000
+      protocol: TCP
+  type: NodePort
+  selector:
+    app: 

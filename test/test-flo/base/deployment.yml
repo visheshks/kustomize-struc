@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 
+  labels:
+    app: 
+    team: 
+spec:
+  selector:
+    matchLabels:
+      app: 
+  template:
+    metadata:
+      labels:
+        app: 
+    spec:
+      containers:
+        - name: A
+          imagePullPolicy: Always
+          env:
+            - name: 'MONGODB_HOST'
+              valueFrom:
+                secretKeyRef:
+                  name: 
+                  key: MONGODB_HOST
+      imagePullSecrets:
+        - name: secret-name
+      
